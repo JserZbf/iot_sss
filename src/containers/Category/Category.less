@@ -1,0 +1,198 @@
+.categoryContainer {
+  height: 100%;
+  width: 201px;
+  color: #fff;
+  padding-top: 50px;
+  border-radius: 0 28px 0 0;
+  background-image: url('../../assets/leftMenu.png');
+  background-size: 100% 101%;
+  background-repeat: no-repeat;
+  background-position-y: -5px;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu {
+    transition: none;
+    background-color: transparent;
+    color: #fff;
+    overflow-y: auto;
+
+    .itemContainer {
+      width: 100%;
+      display: flex;
+      font-weight: bolder;
+      align-items: center;
+    }
+  }
+
+  :global {
+    .ant-menu-inline.ant-menu-root .ant-menu-item > .ant-menu-title-content,
+    .ant-menu-inline.ant-menu-root .ant-menu-submenu-title > .ant-menu-title-content {
+      min-width: 0;
+      text-overflow: ellipsis;
+      color: #fff;
+    }
+
+    .ant-menu-sub.ant-menu-inline > .ant-menu-item,
+    .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+      height: 36px;
+      line-height: 30px;
+      list-style-position: inside;
+      list-style-type: disc;
+
+      padding-right: 0;
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: 0px !important;
+    }
+
+    .ant-menu {
+      height: calc(~'100% - 40px');
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      overflow-y: auto;
+      background-color: transparent;
+      user-select: none;
+
+      .ant-menu-sub {
+        position: relative;
+      }
+
+      .ant-menu-submenu:hover {
+        .ant-menu-submenu-arrow {
+          color: #fff;
+        }
+      }
+
+      .ant-menu-submenu-title {
+        font-size: 13px;
+        white-space: inherit !important;
+        width: 100%;
+        color: #fff;
+      }
+
+      .ant-menu-item:active {
+        background-color: transparent;
+      }
+
+      .categoryContainer___17sTj .ant-menu {
+        height: calc(100%-54px);
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        overflow-y: auto;
+        background-color: transparent;
+      }
+
+      .categoryContainer___17sTj .menu___16PPr {
+        transition: none;
+        background-color: transparent;
+        color: #fff;
+      }
+
+      .ant-menu-root.ant-menu-vertical,
+      .ant-menu-root.ant-menu-vertical-left,
+      .ant-menu-root.ant-menu-vertical-right,
+      .ant-menu-root.ant-menu-inline {
+        box-shadow: none;
+      }
+
+      .ant-menu-inline {
+        width: 100%;
+      }
+
+      .ant-menu-sub.ant-menu-inline {
+        background-color: transparent;
+      }
+
+      .ant-menu-item {
+        white-space: inherit !important;
+        width: 100%;
+        color: #fff;
+
+        &::after {
+          display: none;
+        }
+
+        & > .ant-menu-title-content > .iconfont {
+          padding-left: 22px;
+        }
+      }
+
+      .ant-menu-item-active {
+        color: #fff;
+      }
+
+      .ant-menu-item-selected {
+        font-size: 14px;
+        background-color: transparent !important;
+        color: #223a6a;
+        background-repeat: no-repeat;
+        background-position: right 0px;
+      }
+    }
+
+    .ant-menu-item-selected {
+      .ant-menu-title-content {
+        background: rgba(174, 255, 255, 0.27);
+        border-radius: 5px 0 0 5px;
+      }
+    }
+
+    .ant-menu-submenu-title {
+      font-size: 14px !important;
+      font-family: PingFangSC-Regular !important;
+    }
+
+    .ant-menu-submenu-title:active {
+      background-color: transparent;
+    }
+
+    .ant-menu-submenu-arrow {
+      color: #fff;
+    }
+
+    .ant-menu-submenu-arrow:hover {
+      color: #fff;
+    }
+  }
+
+  .menuIcon {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 6px;
+    text-align: center;
+    line-height: 32px;
+    min-width: 16px;
+  }
+}
+
+.toggleShrink {
+  background: #1d2328;
+  height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  width: 80px;
+}
+
+.toggleCollapsed {
+  background: #1d2328;
+  height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  width: 201px;
+  border-right: 1px solid #fff;
+}
+
+.icon {
+  color: #fff !important;
+  line-height: 20px;
+  font-size: 15px;
+}

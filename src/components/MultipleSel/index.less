@@ -1,0 +1,28 @@
+.searchBox {
+  .buttonPosition {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      margin-left: 8px;
+    }
+    .expand {
+      color: #8CC1FD;
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+    }
+  }
+  .flexRight {
+    flex: 1;
+
+    :global {
+      .ant-form-item {
+        flex: none;
+        flex-wrap: nowrap;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
