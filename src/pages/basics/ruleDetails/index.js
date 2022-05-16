@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Button, Form, Popconfirm, Switch, Modal } from 'antd';
-import MultipleSel from 'components/MultipleSel';
 import AutoScale from 'components/AutoScale';
 import Iconfont from 'components/Iconfont';
 import { useSelector, useDispatch } from 'dva';
