@@ -22,9 +22,6 @@ class Layout extends Component {
         };
     }
 
-    componentDidMount() {
-    }
-
     componentDidCatch(error, info) {
         console.error('Layout Catched Error:', error, info);
         this.setState({
@@ -52,19 +49,15 @@ class Layout extends Component {
 
         return (
             <ConfigProvider locale={zhCN}>
-                <DocumentTitle title="基础模块">
+                <DocumentTitle title="AGV">
                     {pathname === '/login' ?
-                        <div  className={styles.container}>{children}</div> :
+                        <div className={styles.container}>{children}</div> :
                         <div className={styles.container}>
 
                             <div className={styles.leftContainer}>
                                 <div className={styles.menuBackground}>
                                     <Category />
                                 </div>
-
-                                <div className={styles.menuLeft}>
-                                    <img src={logo} alt='' style={{ width: "20px" }} />
-                                    <p className={styles.menuSize}>上海交大智邦提供技术支持</p> </div>
                             </div>
                             <div className={styles.rightContainer}>
                                 <div className={styles.header}>

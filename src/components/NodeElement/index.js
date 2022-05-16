@@ -83,7 +83,7 @@ export const FlowOEE = (props) => {
   const { node } = props;
   const { params = {}, label } = node.getProp();
   return (
-    <div className={`${styles.flowOEE}`} style={{borderColor:params.OEE<85?'red':''}}>
+    <div className={`${styles.flowOEE}`} style={{ borderColor: params.OEE < 85 ? 'red' : '' }}>
       <div className={styles.left}>{label}</div>
       <div className={styles.right}>
         <div className={styles.item}>OEE:{params.OEE}%</div>

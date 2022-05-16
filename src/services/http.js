@@ -45,7 +45,8 @@ export class Http {
       const redirectUrl =
         window.location.origin +
         encodeURIComponent(
-          `${history.location.pathname}${history.location.search.substr(1) ? `&${history.location.search.substr(1)}` : ''
+          `${history.location.pathname}${
+            history.location.search.substr(1) ? `&${history.location.search.substr(1)}` : ''
           }`,
         );
       navTo({
@@ -134,10 +135,6 @@ export class Http {
   };
 
   checkErrCode(dataObj) {
-    //   if (dataObj.code != 200)
-    //   { HttpCodeCheckout(JSON.stringify(dataObj.code),dataObj.msg)
-
-    // }
     const { code: lErrCode, data, msg } = dataObj;
     const code = !isNil(lErrCode) ? lErrCode : 200;
 
